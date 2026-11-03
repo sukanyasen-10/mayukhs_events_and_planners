@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Celebration - Megha & Sonal | Guest Welcome Guide</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: radial-gradient(circle at 50% 0%, #4a0d16 0%, #200408 55%, #120204 100%);
+      color: #fff9f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      padding: 24px 14px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* Festive Header */
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 28px 18px;
+      background: linear-gradient(180deg, rgba(212, 160, 23, 0.15) 0%, rgba(255, 215, 0, 0.02) 100%);
+      border: 1px solid rgba(255, 215, 0, 0.35);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(255, 215, 0, 0.08);
+    }
+
+    .shubh {
+      font-size: 1.5rem;
+      color: #ffd700;
+      margin-bottom: 6px;
+      letter-spacing: 4px;
+    }
+
+    .subtitle {
+      font-size: 0.82rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #f3c26b;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .couple-names {
+      font-size: 2.3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #fff3c4 0%, #ffd700 50%, #e09f19 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 4px;
+    }
+
+    .wedding-date {
+      font-size: 0.95rem;
+      color: #ffd700;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .marigold-garland {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: #f59e0b;
+      font-size: 1.1rem;
+      margin: 10px 0 2px;
+    }
+
+    .marigold-garland::before,
+    .marigold-garland::after {
+      content: "";
+      height: 1px;
+      width: 50px;
+      background: linear-gradient(to right, transparent, #ffd700, transparent);
+    }
+
+    .welcome-card {
+      background: rgba(44, 8, 13, 0.75);
+      border: 1px solid rgba(255, 215, 0, 0.25);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 22px;
+      text-align: center;
+      font-size: 0.92rem;
+      color: #f7e6cb;
+    }
+
+    .welcome-card p {
+      margin-bottom: 8px;
+    }
+
+    .section-label {
+      font-size: 1.1rem;
+      color: #ffd700;
+      margin: 24px 0 12px 2px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Cards */
+    .card {
+      background: linear-gradient(145deg, #2c080d 0%, #1f0407 100%);
+      border: 1px solid rgba(255, 215, 0, 0.25);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .main-venue {
+      border: 2px solid #ffd700;
+      background: linear-gradient(145deg, #3d0d14 0%, #25050a 100%);
+      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.15);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: rgba(255, 215, 0, 0.15);
+      color: #ffd700;
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      margin-bottom: 8px;
+    }
+
+    .venue-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff9f0;
+      margin-bottom: 4px;
+    }
+
+    .venue-address {
+      font-size: 0.92rem;
+      color: #e2c9be;
+      margin-bottom: 14px;
+    }
+
+    .map-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #ffd700 0%, #d99b16 100%);
+      color: #230408;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 11px 16px;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(217, 155, 22, 0.3);
+    }
+
+    /* Hotel Contact Inline */
+    .hotel-contact-box {
+      background: rgba(0, 0, 0, 0.28);
+      border-top: 1px dashed rgba(255, 215, 0, 0.3);
+      padding-top: 12px;
+      margin-top: 14px;
+    }
+
+    .hotel-contact-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #f3c26b;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .hotel-contact-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .hotel-contact-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #ffffff;
+    }
+
+    /* Buttons */
+    .action-btn-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    .call-btn, .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.82rem;
+    }
+
+    .call-btn {
+      background: rgba(255, 215, 0, 0.15);
+      border: 1px solid #ffd700;
+      color: #ffd700;
+    }
+
+    .whatsapp-btn {
+      background: #25d366;
+      color: #ffffff;
+      border: 1px solid #25d366;
+    }
+
+    /* Quick Assistance Contact Grid */
+    .coord-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 580px) {
+      .coord-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .coord-card {
+      background: linear-gradient(145deg, #2b080d 0%, #1e0407 100%);
+      border: 1px solid rgba(255, 215, 0, 0.25);
+      border-radius: 14px;
+      padding: 14px;
+      text-align: center;
+    }
+
+    .coord-name {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+
+    .coord-role {
+      font-size: 0.78rem;
+      color: #f3c26b;
+      margin-bottom: 10px;
+    }
+
+    .coord-card .action-btn-group {
+      justify-content: center;
+    }
+
+    /* Programme Table */
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    .schedule-table th, .schedule-table td {
+      padding: 10px 10px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+    }
+
+    .schedule-table th {
+      color: #ffd700;
+      font-weight: 700;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .schedule-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .event-date {
+      color: #f3c26b;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .event-name {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .event-time {
+      color: #e2c9be;
+    }
+
+    /* Notes Box */
+    .info-box {
+      background: rgba(0, 0, 0, 0.25);
+      border-left: 3px solid #ffd700;
+      padding: 12px 14px;
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 10px;
+      font-size: 0.88rem;
+      color: #e2c9be;
+    }
+
+    .info-box:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-box strong {
+      color: #ffd700;
+    }
+
+    /* Planner Card */
+    .planner-card {
+      background: linear-gradient(145deg, #2d090e 0%, #170204 100%);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      border-radius: 16px;
+      padding: 22px;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .planner-role {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #f3c26b;
+      margin-bottom: 4px;
+    }
+
+    .planner-name {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #ffd700;
+      margin-bottom: 12px;
+    }
+
+    .planner-contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .planner-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .pill-wa {
+      background: #25d366;
+      color: #fff;
+    }
+
+    .pill-call {
+      background: rgba(255, 215, 0, 0.15);
+      color: #ffd700;
+      border: 1px solid rgba(255, 215, 0, 0.4);
+    }
+
+    .social-row {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .social-link {
+      color: #ffd700;
+      text-decoration: none;
+      font-size: 0.82rem;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      padding: 5px 12px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="shubh">🪔 ✦ 🪔</div>
+      <div class="subtitle">Wedding Celebration of</div>
+      <h1 class="couple-names">Megha & Sonal</h1>
+      <div class="wedding-date">22 November 2026 • Kolkata</div>
+      <div class="marigold-garland">✦ ✤ ✦</div>
+    </div>
+
+    <!-- Complete Welcome Message -->
+    <div class="welcome-card">
+      <div style="font-size: 1.15rem; font-weight: 700; color: #ffd700; margin-bottom: 8px;">Namaste & A Heartfelt Welcome!</div>
+      <p>To Our Dearest Family & Friends, welcome to the City of Joy! We are delighted that you are here to celebrate the most beautiful beginning of Megha and Sonal's journey together.</p>
+      <p>This celebration would be incomplete without you. Your presence is our biggest blessing. For anything you need during your stay, our hospitality and coordination teams are always happy to assist you.</p>
+      <div style="margin-top: 10px; font-weight: 700; color: #f3c26b;">With lots of love & warm regards,<br>Rama & Prakash Vaidyanathan Family</div>
+    </div>
+
+    <!-- 1. QUICK CONTACTS & ASSISTANCE (At the Top) -->
+    <div class="section-label">📞 Emergency & Family Support</div>
+    <div class="coord-grid">
+      <div class="coord-card">
+        <div class="coord-name">Mayukh Ghosal</div>
+        <div class="coord-role">Overall Event Coordinator</div>
+        <div class="action-btn-group">
+          <a href="tel:+919007121108" class="call-btn">📞 Call</a>
+          <a href="https://wa.me/919007121108" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="coord-card">
+        <div class="coord-name">Prakash Vaidyanathan</div>
+        <div class="coord-role">Family Contact</div>
+        <div class="action-btn-group">
+          <a href="tel:+919830113728" class="call-btn">📞 Call</a>
+          <a href="https://wa.me/919830113728" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="coord-card">
+        <div class="coord-name">Rakesh</div>
+        <div class="coord-role">Medical / Emergency</div>
+        <div class="action-btn-group">
+          <a href="tel:+919830778841" class="call-btn">📞 Call</a>
+          <a href="https://wa.me/919830778841" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. MAIN VENUE -->
+    <div class="section-label">🏛️ Main Wedding Venue</div>
+    <div class="card main-venue">
+      <span class="badge">Official Event Location</span>
+      <h2 class="venue-title">The Ballygunge Maidan by Erwin Bart</h2>
+      <p class="venue-address">Gurusaday Road, Opposite Birla Museum, Ballygunge, Kolkata – 700019</p>
+      <a href="https://maps.app.goo.gl/az7LXwozrqs3drQbA" target="_blank" rel="noopener noreferrer" class="map-btn">
+        📍 Open Venue in Google Maps
+      </a>
+    </div>
+
+    <!-- 3. HOTELS WITH ASSIGNED COORDINATORS -->
+    <div class="section-label">🏨 Accommodations & Assigned Coordinators</div>
+
+    <!-- Southern Plaza Hotel -->
+    <div class="card">
+      <span class="badge">Guest Stay & Gathering</span>
+      <h3 class="venue-title">Southern Plaza Hotel</h3>
+      <p class="venue-address">73 Southern Avenue, Dr. Meghnad Saha Sarani, Kolkata – 700029</p>
+      <a href="https://share.google/grjoWYJpLZM4Rkf8c" target="_blank" rel="noopener noreferrer" class="map-btn">
+        📍 Open Venue in Google Maps
+      </a>
+      <div class="hotel-contact-box">
+        <div class="hotel-contact-label">Dedicated Hotel Coordinator</div>
+        <div class="hotel-contact-row">
+          <div class="hotel-contact-name">Mayukh Ghosal</div>
+          <div class="action-btn-group">
+            <a href="tel:+919007121108" class="call-btn">📞 Call</a>
+            <a href="https://wa.me/919007121108" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">💬 WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soukyam Hotel -->
+    <div class="card">
+      <span class="badge">Guest Stay & Gathering</span>
+      <h3 class="venue-title">Soukyam Hotel</h3>
+      <p class="venue-address">32/11 Gariahat Road, Jodhpur Park, Kolkata – 700031</p>
+      <a href="https://maps.app.goo.gl/oHD4PvMuT3tNZbcZA" target="_blank" rel="noopener noreferrer" class="map-btn">
+        📍 Open Venue in Google Maps
+      </a>
+      <div class="hotel-contact-box">
+        <div class="hotel-contact-label">Dedicated Hotel Coordinator</div>
+        <div class="hotel-contact-row">
+          <div class="hotel-contact-name">Aninda Chakraborty</div>
+          <div class="action-btn-group">
+            <a href="tel:+919382547969" class="call-btn">📞 Call</a>
+            <a href="https://wa.me/919382547969" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">💬 WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hotel Steam -->
+    <div class="card">
+      <span class="badge">Guest Stay & Gathering</span>
+      <h3 class="venue-title">Hotel Steam</h3>
+      <p class="venue-address">67B Hazra Road, Dover Terrace, Kolkata – 700029</p>
+      <a href="https://maps.app.goo.gl/EMW27GpScTb2APUdA" target="_blank" rel="noopener noreferrer" class="map-btn">
+        📍 Open Venue in Google Maps
+      </a>
+      <div class="hotel-contact-box">
+        <div class="hotel-contact-label">Dedicated Hotel Coordinator</div>
+        <div class="hotel-contact-row">
+          <div class="hotel-contact-name">Amit Ghosh</div>
+          <div class="action-btn-group">
+            <a href="tel:+918910220217" class="call-btn">📞 Call</a>
+            <a href="https://wa.me/918910220217" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">💬 WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. WEDDING PROGRAMME (Below Contacts & Venues) -->
+    <div class="section-label">🗓️ Wedding Programme</div>
+    <div class="card">
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Celebration</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="event-date">Fri, 20 Nov</td>
+            <td class="event-name">Guest Arrivals & Check-in</td>
+            <td class="event-time">12:00 PM onwards</td>
+          </tr>
+          <tr>
+            <td class="event-date">Sat, 21 Nov</td>
+            <td class="event-name">Mehendi</td>
+            <td class="event-time">11:00 AM onwards</td>
+          </tr>
+          <tr>
+            <td class="event-date">Sat, 21 Nov</td>
+            <td class="event-name">Lunch at Wedding Venue</td>
+            <td class="event-time">11:00 AM – 1:30 PM</td>
+          </tr>
+          <tr>
+            <td class="event-date">Sat, 21 Nov</td>
+            <td class="event-name">Sangeet</td>
+            <td class="event-time">7:00 PM</td>
+          </tr>
+          <tr>
+            <td class="event-date">Sat, 21 Nov</td>
+            <td class="event-name">Dinner at Wedding Venue</td>
+            <td class="event-time">8:00 PM – 11:00 PM</td>
+          </tr>
+          <tr>
+            <td class="event-date">Sun, 22 Nov</td>
+            <td class="event-name">Wedding Ceremony</td>
+            <td class="event-time">Morning • 7:30 AM</td>
+          </tr>
+          <tr>
+            <td class="event-date">Sun, 22 Nov</td>
+            <td class="event-name">Breakfast at Venue</td>
+            <td class="event-time">7:30 AM – 9:30 AM</td>
+          </tr>
+          <tr>
+            <td class="event-date">Sun, 22 Nov</td>
+            <td class="event-name">Lunch at Venue</td>
+            <td class="event-time">11:30 AM – 2:00 PM</td>
+          </tr>
+          <tr>
+            <td class="event-date">Sun, 22 Nov</td>
+            <td class="event-name">Wedding Reception</td>
+            <td class="event-time">Evening • 7:00 PM</td>
+          </tr>
+          <tr>
+            <td class="event-date">Sun, 22 Nov</td>
+            <td class="event-name">Dinner at Venue</td>
+            <td class="event-time">7:00 PM – 11:00 PM</td>
+          </tr>
+          <tr>
+            <td class="event-date">Mon, 23 Nov</td>
+            <td class="event-name">Hotel Check-out / Departures</td>
+            <td class="event-time">11:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 5. GUEST GUIDELINES & TRAVEL INFO -->
+    <div class="section-label">🚗 Travel, Meals & Stay Guidelines</div>
+    <div class="card">
+      <div class="info-box">
+        <strong>🚘 Dedicated Function Cars:</strong> Dedicated cars are arranged for your movement between the hotels and the wedding venue. Our team will keep you updated on WhatsApp regarding timings and pick-up details.
+      </div>
+      <div class="info-box">
+        <strong>✈️ Airport & Station Transfers:</strong> Guests are kindly requested to make their own arrival and departure transfer arrangements between the airport/railway station and the hotel. Our team will be happy to assist in arranging a car if required.
+      </div>
+      <div class="info-box">
+        <strong>🏨 Hotel Stay (20–23 Nov 2026):</strong> Your stay has been arranged and taken care of by the family. Personal expenses (room service, laundry, minibar, or extra nights) are payable directly at the hotel desk. Check-out is at 11:00 AM on 23 November.
+      </div>
+      <div class="info-box">
+        <strong>🍽️ Hosted Meals:</strong> Meals hosted by us will be served at the wedding venue as per the schedule above. Outside these designated timings, guests are requested to kindly make their own dining arrangements.
+      </div>
+      <div class="info-box">
+        <strong>💡 Comfort Reminder:</strong> Keep your phone charged, confirm your pick-up points on the WhatsApp group, and check the room thoroughly for personal belongings before final check-out.
+      </div>
+    </div>
+
+    <!-- Planner Footer -->
+    <div class="planner-card">
+      <div class="planner-role">Event Coordinated by</div>
+      <div class="planner-name">Mayukh's Events & Wedding Planners</div>
+     
+      <div class="planner-contact-row">
+        <a href="tel:+919007121108" class="planner-pill pill-call">📞 9007121108</a>
+        <a href="https://wa.me/919007121108" target="_blank" rel="noopener noreferrer" class="planner-pill pill-wa">💬 WhatsApp</a>
+        <a href="tel:+919038299183" class="planner-pill pill-call">📞 9038299183</a>
+        <a href="https://wa.me/919038299183" target="_blank" rel="noopener noreferrer" class="planner-pill pill-wa">💬 WhatsApp</a>
+      </div>
+
+      <div style="font-size: 0.9rem; color: #e2c9be; margin-top: 8px;">
+        ✉️ <a href="mailto:mayukh2990@gmail.com" style="color: #ffd700; text-decoration: none;">mayukh2990@gmail.com</a>
+      </div>
+
+      <div class="social-row">
+        <a href="https://facebook.com/mayukhs2019" target="_blank" rel="noopener noreferrer" class="social-link">Facebook: mayukhs2019</a>
+        <a href="https://instagram.com/mayukhs.eventplanners" target="_blank" rel="noopener noreferrer" class="social-link">Instagram: @mayukhs.eventplanners</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
